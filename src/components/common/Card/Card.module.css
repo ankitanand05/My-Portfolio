@@ -1,0 +1,18 @@
+.card {
+  background: var(--bg-primary);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-medium);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.hover:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-xl);
+}
+
+[data-theme="dark"] .card {
+  background: var(--bg-secondary);
+  border-color: rgba(255, 255, 255, 0.1);
+}
